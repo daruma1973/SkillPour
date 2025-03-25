@@ -2,29 +2,30 @@
 
 A comprehensive multi-tenant Food & Beverage management platform designed to streamline restaurant operations through modular, integrated solutions with enhanced error resilience and user experience.
 
-## Key Technologies
+## Project Overview
 
-- Django backend
-- Next.js frontend
-- Supabase authentication
-- Flask-based authentication extensions
-- Docker containerization
-- Nginx reverse proxy configuration
-- Tenant-based multi-organization support
-- Robust error handling and deployment infrastructure
+SkillPour is a modular, multi-tenant management system for food and beverage businesses. It allows multiple business tenants to operate independently within a single platform while providing specialized modules for various aspects of F&B operations.
 
-## Initial Setup
+## Architecture
 
-1. Download the project files from the release assets
+- **Backend**: Django REST framework
+- **Frontend**: Next.js with React and Tailwind CSS
+- **Authentication**: Supabase + Django
+- **Database**: PostgreSQL (primary) + Supabase (authentication/quick access)
+- **Deployment**: Docker, Nginx, and SSL or Replit
+
+## Getting Started
+
+1. Download the project files from: https://ea3fd96a300e.repl.co/SkillPour-essentials.tar.gz
 2. Extract the archive: `tar -xzf SkillPour-essentials.tar.gz`
-3. Follow the deployment instructions in PRODUCTION_DEPLOYMENT.md
+3. Follow the deployment instructions in the documentation
 
-## Modules
+## Features
 
-- Core: Base functionality for all tenants
-- Inventory: Track stock, manage items, and handle transactions
-- Recipe: Create and manage recipes with cost calculations
-- Menu: Build and maintain menus with pricing
-- Vendor: Manage suppliers and purchasing
-- Ordering: Process orders and manage fulfillment
-- Training: Staff training materials and tracking
+- **Multi-tenancy**: Isolated environments for each business
+- **Role-based access control**: Different permission levels
+- **Modular design**: Activate only required modules
+- **Real-time synchronization**: Between Django and Supabase
+- **API proxy**: Unified API access for frontend
+- **Responsive UI**: Mobile-friendly interface
+
